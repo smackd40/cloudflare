@@ -5,13 +5,6 @@
 	"version": "0.1",
 	"main": "./public/javascripts/abetterbrowser.min.js",
 	"implements": "AMD",
-	"contributors":
-	[
-		
-			"name": "Mike D.",
-			"email": "mdawson40@gmail.com"
-		
-	],
 	"billing":{
       "type":"zone",
       "plans":[
@@ -23,11 +16,6 @@
             "name":"Yearly",
             "price":"9.99"
   },
-  "repository":
-	{
-		"type": "git",
-		"url": "https://github.com/xPaw/CF-ABetterBrowser.git"
-	},
 	"config":
 	{
 		"assets":
