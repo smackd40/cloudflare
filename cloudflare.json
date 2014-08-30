@@ -1,74 +1,73 @@
 {
-	"name": "MobDirect",
-	"description": "Browser Direction",
-	"category": "webmaster",
-	"version": "0.1",
-	"main": "./public/javascripts/abetterbrowser.min.js",
-	"implements": "AMD",
-	"billing":{
-      "type":"zone",
-      "plans":[
-         {
-            "name":"Monthly",
-            "price":"0.99"
-         },
-         {
-            "name":"Yearly",
-            "price":"9.99"
-  },
-	"config",
-	{
-		"assets":
-		{
-			"logos":
-			{
-				"200px": "./public/images/logo-200.png",
-				"132px": "./public/images/logo-132.png"
-			},
-			"detail_page":
-			[
-				"./public/images/info.png"
-			]
-		},
-		"details":
-		{
-			"Category": "Webmaster Tools",
-			"Language": "English",
-			"Restrictions": "None",
-			"Supporting": "<a href='http://rocketMD.com/'>Mobile – Google</a>"
-		},
-		"interface":
-		[
-			{
-				"id": "ie",
-				"name": "Internet Explorer",
-				"description": "Highest version of IE to display warning (Setting this to 7.0 will display warning in IE7 and lower, but not in IE8)",
-				"type": "select",
-				"options":
-				[
-					{
-						"label": "6.0",
-						"value": "6"
-					},
-					{
-						"label": "7.0",
-						"value": "7"
-					},
-					{
-						"label": "8.0",
-						"value": "8",
-						"selected": true
-					},
-					{
-						"label": "9.0",
-						"value": "9"
-					},
-					{
-						"label": "10.0",
-						"value": "10"
-					}
-				]
-			}
-		]
-	}
-]
+    "name": "Redirect Rocket",
+    "description": "Browser Direction",
+    "version": "0.1",
+    "category": "webmaster",
+    "main": "public/javascripts/app_module.js",
+    "config": {
+        "details": {
+            "Language": "English",
+            "Price": "Free",
+            "Restrictions": "None",
+            "TOS": "http://www.cloudflare.com/terms",
+            "has_js": true
+        },
+        "assets": {
+            "logos": {
+                "200px": "./public/images/logo-200.png",
+                "132px": "./public/images/logo-132.png"
+            },
+            "detail_page": [
+                "./public/images/example.png"
+            ],
+            "images": [
+                "./public/images/counter.png"
+            ]
+        },
+        "interface": [
+            {
+                "type": "string",
+                "id": "food",
+                "name": "Favorite Food",
+                "description": "Please tell us your favorite food.",
+                "domain_request": true,
+                "private": true
+            },
+            {
+                "type": "select",
+                "id": "lottery",
+                "name": "Do you Lotto?",
+                "description": "Choose whether to buy a ticket",
+                "options": [
+                    {
+                        "label": "Yes, buy a ticket!",
+                        "value": "true"
+                    },
+                    {
+                        "label": "No, I am scared.",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "account": {
+        "callback_url": "http://cflare.herokuapp.com",
+        "user_fields": [
+            "email"
+        ]
+    },
+    "billing": {
+        "type": "zone",
+        "plans": [
+            {
+                "name": "Monthly",
+                "price": ".99"
+            },
+            {
+                "name": "Yearly",
+                "price": "9.99"
+            }
+        ]
+    }
+}
