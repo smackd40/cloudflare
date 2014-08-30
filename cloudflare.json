@@ -16,7 +16,7 @@
             "name":"Yearly",
             "price":"9.99"
   },
-	"config":
+	"config",
 	{
 		"assets":
 		{
@@ -71,4 +71,4 @@
 			}
 		]
 	}
-}
+]
