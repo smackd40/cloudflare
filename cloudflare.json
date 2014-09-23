@@ -1,5 +1,5 @@
 {
-    "name": "Trumpet II",
+    "name": "Mobile Download",
     "category": "webmaster",
     "description": "This app lets you put a small message at the top of your site. If the user dismisses the message by clicking on it, Trumpet will not show it again for 24 hours.",
     "keywords" : [
@@ -8,13 +8,13 @@
     "version": "0.1.0",
     "contributors": [
     {
-        "name" : "Martin Reistadbakk",
-        "email" : "martin@reistadbakk.com"
+        "name" : "Mike",
+        "email" : "mdawson40@gmail.com"
     }
     ],
         "repository" : {
             "type" : "git",
-            "url" : "https://github.com/martior/trumpet.git"
+            "url" : "https://github.com/smackd40/cloudflare"
         },
         "main" : "./public/javascripts/trumpet.js",
         "dependencies" : {
